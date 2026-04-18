@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+env/
+
+# Robot Framework output files (generated on each run)
+Results/output.xml
+Results/log.html
+Results/report.html
+Results/*.png
+
+# OS files
+.DS_Store
+Thumbs.db
