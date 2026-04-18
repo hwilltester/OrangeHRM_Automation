@@ -1,0 +1,8 @@
+# ── Core Framework ────────────────────────────────────────────────────────────
+robotframework==7.0
+
+# ── Browser Automation ────────────────────────────────────────────────────────
+robotframework-seleniumlibrary==6.3.0
+
+# ── WebDriver Manager (auto-downloads the correct ChromeDriver) ───────────────
+webdrivermanager==0.10.0
