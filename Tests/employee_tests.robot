@@ -17,6 +17,8 @@ Test Template       Login And Add Employee
 *** Test Cases ***    FIRST_NAME    LAST_NAME
 
 Add Employee John Doe      John    Doe
+Add Employee Jane Smith    Jane    Smith
+Add Employee Mike Ross     Mike    Ross
 
 
 *** Keywords ***
