@@ -41,3 +41,9 @@ ${LOC_PERSONAL_DETAILS_HDR}  xpath://h6[text()='Personal Details']
 ...    John,Doe
 ...    Jane,Smith
 ...    Mike,Ross
+
+# ── Leave Module Locators ──────────────────────────────────────────────────────
+${LOC_LEAVE_MENU}            xpath://span[text()='Leave']
+${LOC_LEAVE_LIST_HEADER}     xpath://h5[text()='Leave List']
+${LOC_APPLY_LEAVE_BUTTON}    xpath://a[text()='Apply']
+${LOC_APPLY_LEAVE_HEADER}    xpath://h6[text()='Apply Leave']
