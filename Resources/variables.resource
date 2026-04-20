@@ -22,6 +22,7 @@ ${LOC_USERNAME_INPUT}        name:username
 ${LOC_PASSWORD_INPUT}        name:password
 ${LOC_LOGIN_BUTTON}          css:button[type='submit']
 ${LOC_DASHBOARD_HEADER}      xpath://h6[text()='Dashboard']
+${LOC_LOGIN_ERROR_MSG}       xpath://p[@class='oxd-text oxd-text--p oxd-alert-content-text']
 
 # ── Navigation Locators ────────────────────────────────────────────────────────
 ${LOC_PIM_MENU}              xpath://span[text()='PIM']
