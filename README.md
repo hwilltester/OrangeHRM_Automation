@@ -18,8 +18,9 @@ Every test follows the **Page Object Model** pattern, keeping the code clean, re
 
 ---
 
-## 📁 Folder Structure
+### 📁 Folder Structure
 
+```
 OrangeHRM_Automation/
 │
 ├── Tests/
@@ -39,7 +40,7 @@ OrangeHRM_Automation/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## ⚙️ Setup Instructions
