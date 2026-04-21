@@ -219,22 +219,9 @@ Each module has its own keyword file (`login_keywords`, `leave_keywords`). This 
 
 ---
 
-## 💼 Why This Project Matters For a Portfolio
-
-| What it shows | Why it matters |
-|---|---|
-| Page Object Model | Industry-standard design pattern |
-| Data-Driven Testing | Scales without copy-pasting code |
-| Multiple test suites | Real project organisation |
-| Positive and negative tests | Professional test thinking |
-| Conditional screenshot on failure | Smart teardown logic |
-| Clean folder structure | Easy for any team to understand |
-
----
-
 ## 🙋 Author
 
-**Your Name**
+**Htuu Will**
 [GitHub](https://github.com/hwilltester) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
 
 ---
