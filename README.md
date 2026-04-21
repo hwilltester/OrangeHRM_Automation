@@ -222,7 +222,7 @@ Each module has its own keyword file (`login_keywords`, `leave_keywords`). This 
 ## 🙋 Author
 
 **Htuu Will**
-[GitHub](https://github.com/hwilltester) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+[GitHub](https://github.com/hwilltester) · [LinkedIn](https://linkedin.com/in/htuuwill)
 
 ---
 
