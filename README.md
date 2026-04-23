@@ -1,4 +1,4 @@
-# 🤖 OrangeHRM Automation — Robot Framework Portfolio Project
+# 🤖 OrangeHRM Automation - Robot Framework Portfolio Project
 
 > **Automated UI testing for [OrangeHRM Live](https://opensource-demo.orangehrmlive.com)**
 > Built with Robot Framework · SeleniumLibrary · Page Object Model · Data-Driven Testing
@@ -32,9 +32,9 @@ OrangeHRM_Automation/
 │   ├── keywords.resource         # Shared business keywords
 │   ├── login_keywords.resource   # Login page keywords
 │   ├── leave_keywords.resource   # Leave module keywords
-│   └── variables.resource        # All locators and test data
+│   └── variables.resource        # All locators and test data as Variable resource
 │
-├── Results/                      # Reports and screenshots go here
+├── Results/                      # Reports and screenshots will be shown here
 │   └── .gitkeep
 │
 ├── .gitignore
