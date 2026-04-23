@@ -16,10 +16,10 @@ Test Teardown       Capture Screenshot On Failure
 
 *** Test Cases ***
 
-Valid Login With Correct Credentials
+Valid Login With Correct Credentials  # Tag is for sorting and running specific tests
     [Documentation]    Verifies that admin can login successfully
     ...                and lands on the dashboard.
-    [Tags]    Positive    Login    # For sorting and running specific tests
+    [Tags]    Positive    Login   
     Go To                       ${BASE_URL}/auth/login
     Perform Login               ${ADMIN_USERNAME}    ${ADMIN_PASSWORD}    # Use keyword from login_keywords.resource
     Verify Dashboard Is Displayed    # Use keyword from keywords.resource
