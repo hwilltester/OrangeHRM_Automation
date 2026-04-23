@@ -7,12 +7,12 @@
 
 ## 📌 Project Overview
 
-This project automates UI testing for OrangeHRM — a popular open-source HR application.
+This project automates UI testing for OrangeHRM - a popular open-source HR application.
 
 It covers 3 modules with 8 test cases total:
-- **Login Module** — valid login, invalid login, empty fields
-- **PIM Module** — add 3 new employees using data-driven testing
-- **Leave Module** — navigate to leave list and apply leave form
+- **Login Module** —> valid login, invalid login, empty fields
+- **PIM Module** —> add 3 new employees using data-driven testing
+- **Leave Module** —> navigate to leave list and apply leave form
 
 Every test follows the **Page Object Model** pattern, keeping the code clean, readable, and easy to maintain.
 
@@ -45,7 +45,7 @@ OrangeHRM_Automation/
 
 ## ⚙️ Setup Instructions
 
-### Step 1 — Check Python is installed
+### Step 1 - Check Python is installed
 ```bash
 python --version
 ```
@@ -53,7 +53,7 @@ You need Python 3.10 or higher. Download from [python.org](https://www.python.or
 
 ---
 
-### Step 2 — Clone this project
+### Step 2 - Clone this project
 ```bash
 git clone https://github.com/hwilltester/OrangeHRM_Automation.git
 cd OrangeHRM_Automation
@@ -61,7 +61,7 @@ cd OrangeHRM_Automation
 
 ---
 
-### Step 3 — Create a virtual environment
+### Step 3 - Create a virtual environment
 ```bash
 # Create it
 python -m venv venv
@@ -75,14 +75,14 @@ venv\Scripts\activate
 
 ---
 
-### Step 4 — Install all libraries
+### Step 4 - Install all libraries
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-### Step 5 — Install ChromeDriver
+### Step 5 - Install ChromeDriver
 ```bash
 webdrivermanager chrome
 ```
@@ -194,16 +194,16 @@ After any test run, open the `Results/` folder:
 ## 🧠 Design Decisions
 
 ### Page Object Model
-All page actions live in `Resources/` keyword files — not inside the test files. If a locator changes, you fix it in one place and all tests stay working.
+All page actions live in `Resources/` keyword files - not inside the test files. If a locator changes, you fix it in one place and all tests stay working.
 
 ### Data-Driven Testing
-The employee tests use a Test Template with a data table. One keyword handles all 3 employees automatically — no copy-pasting code.
+The employee tests use a Test Template with a data table. One keyword handles all 3 employees automatically - no copy-pasting code.
 
 ### Screenshot Only On Failure
 Screenshots are taken only when a test fails. This saves disk space and gives you exactly the evidence needed to debug.
 
 ### Separate Keyword Files Per Module
-Each module has its own keyword file (`login_keywords`, `leave_keywords`). This makes the project easy to scale — adding a new module means adding a new file, not editing existing ones.
+Each module has its own keyword file (`login_keywords`, `leave_keywords`). This makes the project easy to scale - adding a new module means adding a new file, not editing existing ones.
 
 ---
 
