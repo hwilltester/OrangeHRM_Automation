@@ -5,9 +5,9 @@
 
 ---
 
-## 📌 Project Overview
+## 📌 Why I Built This Project
 
-This project automates UI testing for OrangeHRM - a popular open-source HR application.
+I built this project to demonstrate my skills in Web Automation and Quality Assurance. Using the OrangeHRM open-source application, I designed an automated testing suite that ensures the core business flows—like logging in, managing employees, and applying for leave—work perfectly every single time.
 
 It covers 3 modules with 8 test cases total:
 - **Login Module** —> valid login, invalid login, empty fields
@@ -43,7 +43,7 @@ OrangeHRM_Automation/
 ```
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ My Local Setup Guide
 
 ### Step 1 - Check Python is installed
 ```bash
@@ -89,7 +89,7 @@ webdrivermanager chrome
 
 ---
 
-## ▶️ How To Run The Tests
+## ▶️ How I Run My Tests
 
 ### Run ALL tests
 ```bash
@@ -163,7 +163,7 @@ robot --outputdir Results --variable BROWSER:headlesschrome Tests/
 
 ---
 
-## 📊 Viewing The Reports
+## 📊 Checking My Test Results
 
 After any test run, open the `Results/` folder:
 
@@ -191,23 +191,31 @@ After any test run, open the `Results/` folder:
 
 ---
 
-## 🧠 Design Decisions
+## 🧠 Why I Built It This Way (Design Decisions)
+This wasn't just about writing code; I wanted to build something that reflects real-world professional standards. Here are the key decisions I made:
 
-### Page Object Model
-All page actions live in `Resources/` keyword files - not inside the test files. If a locator changes, you fix it in one place and all tests stay working.
+### Why Page Object Model?
+I chose the Page Object Model (POM) because I wanted to keep my test scripts clean. Instead of hardcoding locators inside my tests, I moved them to `Resources/` separate keyword files. This way, if a button's ID changes, I only have to fix it in one place, and all my tests stay green.
 
-### Data-Driven Testing
-The employee tests use a Test Template with a data table. One keyword handles all 3 employees automatically - no copy-pasting code.
+### Why Data-Driven Testing for Employees?
+I didn't want to copy-paste the same code for John, Jane, and Mike. I used a Test Template to handle the heavy lifting. It makes the project much easier to scale—if we need to test 50 employees tomorrow, I just add 50 rows of data, not 50 test cases.
 
 ### Screenshot Only On Failure
-Screenshots are taken only when a test fails. This saves disk space and gives you exactly the evidence needed to debug.
+I configured the project to only capture screenshots on failure. I believe this is a better practice because it saves storage space and helps me focus only on the bugs when I'm reviewing the Results folder.
 
-### Separate Keyword Files Per Module
-Each module has its own keyword file (`login_keywords`, `leave_keywords`). This makes the project easy to scale - adding a new module means adding a new file, not editing existing ones.
+### Separate Keyword Files Per Module / Module-Based Keywords
+I split my keywords into separate files (`login_keywords`, `leave_keywords`). In a real job, automation projects grow fast, and this structure ensures that the project remains organized and easy for other team members to understand.
 
 ---
+###💡 What I Learned
 
-## 🛠️ Tech Stack
+Building this portfolio helped me master:
+How to structure a Robot Framework project from scratch.
+Handling dynamic elements in the OrangeHRM UI.
+Managing virtual environments and dependencies effectively.
+
+---
+## 🛠️ My Chosen Tech Stack
 
 | Tool | Purpose |
 |---|---|
