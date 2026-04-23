@@ -8,6 +8,7 @@ Library             SeleniumLibrary
 Resource            ../Resources/keywords.resource
 Resource            ../Resources/leave_keywords.resource
 
+# Use the keywords from keywords.resource for Suite and Test Setup, Teardown session
 Suite Setup         Open Browser And Configure
 Suite Teardown      Close Browser Session
 Test Teardown       Capture Screenshot On Failure
@@ -18,18 +19,20 @@ Test Teardown       Capture Screenshot On Failure
 Verify Leave List Page Is Displayed
     [Documentation]    Logs in and verifies the Leave List
     ...                page loads successfully.
+    [Tags]    page_check    positive
     Go To                       ${BASE_URL}/auth/login
-    Log In As Admin
-    Verify Dashboard Is Displayed
-    Navigate To Leave Module
-    Verify Leave List Is Displayed
+    Log In As Admin    # Use keyword from keywords.resource
+    Verify Dashboard Is Displayed    # Use keyword from keywords.resource
+    Navigate To Leave Module    # Use keyword from leave_keywords.resource
+    Verify Leave List Is Displayed    # Use keyword from leave_keywords.resource
 
 Verify Apply Leave Page Is Displayed
     [Documentation]    Logs in, navigates to Leave module,
     ...                and verifies the Apply Leave form loads.
+    [Tags]    page_check    positive
     Go To                       ${BASE_URL}/auth/login
-    Log In As Admin
-    Verify Dashboard Is Displayed
-    Navigate To Leave Module
-    Click Apply Leave Button
-    Verify Apply Leave Page Is Displayed
+    Log In As Admin    # Use keyword from keywords.resource
+    Verify Dashboard Is Displayed    # Use keyword from keywords.resource
+    Navigate To Leave Module    # Use keyword from leave_keywords.resource
+    Click Apply Leave Button    # Use keyword from leave_keywords.resource
+    Verify Apply Leave Page Is Displayed    # Use keyword from leave_keywords.resource
