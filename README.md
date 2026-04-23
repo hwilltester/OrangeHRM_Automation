@@ -207,7 +207,7 @@ I configured the project to only capture screenshots on failure. I believe this 
 I split my keywords into separate files (`login_keywords`, `leave_keywords`). In a real job, automation projects grow fast, and this structure ensures that the project remains organized and easy for other team members to understand.
 
 ---
-###💡 What I Learned
+### 💡 What I Learned
 
 Building this portfolio helped me master:
 How to structure a Robot Framework project from scratch.
