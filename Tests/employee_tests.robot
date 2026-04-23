@@ -8,7 +8,6 @@ Library             SeleniumLibrary
 Resource            ../Resources/keywords.resource
 
 # Use the keywords from keywords.resource for Suite and Test Setup, Teardown session
-
 Suite Setup         Open Browser And Configure
 Suite Teardown      Close Browser Session
 Test Teardown       Capture Screenshot On Failure
