@@ -7,7 +7,7 @@
 
 ## 📌 Why I Built This Project
 
-I built this project to demonstrate my skills in Web Automation and Quality Assurance. Using the OrangeHRM open-source application, I designed an automated testing suite that ensures the core business flows—like logging in, managing employees, and applying for leave—work perfectly every single time.
+I built this project to demonstrate my skills in Web Automation and Quality Assurance. Using the OrangeHRM open-source application, I designed an automated testing suite that ensures the core business flows—like logging in, managing employees, and applying for leave work perfectly every single time.
 
 It covers 3 modules with 8 test cases total:
 - **Login Module** —> valid login, invalid login, empty fields
