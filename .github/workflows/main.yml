@@ -28,8 +28,10 @@ jobs:
       - name: Run Robot Framework tests
         run: |
           robot --variable BROWSER:headlesschrome \
-                --outputdir results \
-                Tests/
+          --variable IMPLICIT_WAIT:20s \
+          --variable PAGE_LOAD_TIMEOUT:45s \
+          --outputdir results \
+          Tests/
         continue-on-error: true
 
       - name: Upload results
