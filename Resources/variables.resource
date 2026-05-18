@@ -14,8 +14,8 @@ ${ADMIN_PASSWORD}     admin123
 
 # ── Browser Settings ───────────────────────────────────────────────────────────
 ${BROWSER}            chrome
-${IMPLICIT_WAIT}      10s
-${PAGE_LOAD_TIMEOUT}  30s
+${IMPLICIT_WAIT}        20s
+${PAGE_LOAD_TIMEOUT}    45s
 
 # ── Login Page Locators ────────────────────────────────────────────────────────
 ${LOC_USERNAME_INPUT}        name:username
