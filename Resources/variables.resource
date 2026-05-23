@@ -26,7 +26,7 @@ ${LOC_LOGIN_ERROR_MSG}       xpath://p[@class='oxd-text oxd-text--p oxd-alert-co
 
 # ── Navigation Locators ────────────────────────────────────────────────────────
 ${LOC_PIM_MENU}              xpath://span[text()='PIM']
-${LOC_ADD_EMPLOYEE_MENU}     xpath://a[text()='Add Employee']
+${LOC_ADD_EMPLOYEE_MENU}     xpath=//a[normalize-space()='Add Employee']
 
 # ── Add Employee Form Locators ─────────────────────────────────────────────────
 ${LOC_FIRST_NAME_INPUT}      name:firstName
