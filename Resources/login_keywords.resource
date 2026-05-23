@@ -13,7 +13,7 @@ Resource         variables.resource
 Enter Username
     [Documentation]    Types the username into the username field.
     [Arguments]        ${username}
-    Wait Until Element Is Visible    ${LOC_USERNAME_INPUT}
+    Wait Until Element Is Visible    ${LOC_USERNAME_INPUT}    ${IMPLICIT_WAIT}
     Input Text                       ${LOC_USERNAME_INPUT}    ${username}
 
 Enter Password
@@ -23,11 +23,12 @@ Enter Password
 
 Click Login Button
     [Documentation]    Clicks the login submit button.
+    Wait Until Element Is Visible    ${LOC_LOGIN_BUTTON}    ${IMPLICIT_WAIT}
     Click Button    ${LOC_LOGIN_BUTTON}
 
 Verify Login Error Is Displayed
     [Documentation]    Confirms the error message appears after a failed login.
-    Wait Until Element Is Visible    ${LOC_LOGIN_ERROR_MSG}
+    Wait Until Element Is Visible    ${LOC_LOGIN_ERROR_MSG}    ${IMPLICIT_WAIT}
     Element Should Be Visible        ${LOC_LOGIN_ERROR_MSG}
 
 Verify Login Error Message Text
