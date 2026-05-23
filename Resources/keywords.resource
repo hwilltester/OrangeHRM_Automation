@@ -12,11 +12,11 @@ Resource         variables.resource
 # ══════════════════════════════════════════════════════════════════════════════
 
 Open Browser And Configure
-    [Documentation]    Opens the browser and applies global settings.
-    Open Browser       ${BASE_URL}/auth/login    ${BROWSER}
+    Open Browser                    ${BASE_URL}/auth/login    ${BROWSER}
     Maximize Browser Window
-    Set Selenium Implicit Wait    ${IMPLICIT_WAIT}
-    Set Selenium Page Load Timeout    ${PAGE_LOAD_TIMEOUT}
+    Sleep                           3s
+    Set Selenium Implicit Wait      ${IMPLICIT_WAIT}
+    Set Selenium Page Load Timeout  ${PAGE_LOAD_TIMEOUT}
 
 Close Browser Session
     [Documentation]    Closes all open browser windows.
@@ -51,12 +51,8 @@ Verify Dashboard Is Displayed
 # ══════════════════════════════════════════════════════════════════════════════
 
 Navigate To Add Employee Page
-    [Documentation]    Clicks PIM in the sidebar, then Add Employee.
-    Click Element          ${LOC_PIM_MENU}
-    Sleep                  2s
-    Wait Until Element Is Visible
-    ...    xpath=//a[normalize-space()='Add Employee']    ${IMPLICIT_WAIT}
-    Click Element          xpath=//a[normalize-space()='Add Employee']
+    Go To    ${BASE_URL}/pim/addEmployee
+    Wait Until Element Is Visible    ${LOC_FIRST_NAME_INPUT}    ${IMPLICIT_WAIT}
 
 
 # ══════════════════════════════════════════════════════════════════════════════
