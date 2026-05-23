@@ -9,10 +9,8 @@ Resource            ../Resources/keywords.resource
 Resource            ../Resources/leave_keywords.resource
 
 # Use the keywords from keywords.resource for Suite and Test Setup, Teardown session
-Suite Teardown      Close All Browsers
-Test Setup          Open Browser And Configure
-Test Teardown       Capture Screenshot On Failure
-...                 Close Browser Session
+Test Setup      Open Browser And Configure
+Test Teardown   Close Browser Session
 
 
 *** Test Cases ***
