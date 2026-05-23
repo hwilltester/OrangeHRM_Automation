@@ -36,7 +36,7 @@ Capture Screenshot On Failure
 
 Log In As Admin
     [Documentation]    Performs a full login using the admin credentials.
-    Wait Until Element Is Visible    ${LOC_USERNAME_INPUT}
+    Wait Until Element Is Visible    ${LOC_USERNAME_INPUT}    ${IMPLICIT_WAIT}
     Input Text                       ${LOC_USERNAME_INPUT}    ${ADMIN_USERNAME}
     Input Password                   ${LOC_PASSWORD_INPUT}    ${ADMIN_PASSWORD}
     Click Button                     ${LOC_LOGIN_BUTTON}
@@ -53,7 +53,7 @@ Verify Dashboard Is Displayed
 Navigate To Add Employee Page
     [Documentation]    Clicks PIM in the sidebar, then Add Employee.
     Click Element                    ${LOC_PIM_MENU}
-    Wait Until Element Is Visible    ${LOC_ADD_EMPLOYEE_MENU}
+    Wait Until Element Is Visible    ${LOC_ADD_EMPLOYEE_MENU}    ${IMPLICIT_WAIT}
     Click Element                    ${LOC_ADD_EMPLOYEE_MENU}
 
 
@@ -64,7 +64,7 @@ Navigate To Add Employee Page
 Fill In Employee Details
     [Documentation]    Enters the employee's first and last name into the form.
     [Arguments]        ${first_name}    ${last_name}
-    Wait Until Element Is Visible    ${LOC_FIRST_NAME_INPUT}
+    Wait Until Element Is Visible    ${LOC_FIRST_NAME_INPUT}    ${IMPLICIT_WAIT}
     Clear Element Text               ${LOC_FIRST_NAME_INPUT}
     Input Text                       ${LOC_FIRST_NAME_INPUT}    ${first_name}
     Input Text                       ${LOC_LAST_NAME_INPUT}     ${last_name}
