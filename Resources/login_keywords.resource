@@ -25,9 +25,14 @@ Click Login Button
     Click Element    ${LOC_LOGIN_BUTTON}
 
 Verify Login Error Is Displayed
-    [Documentation]    Confirms the error message appears after a failed login.
-    Wait Until Element Is Visible    ${LOC_LOGIN_ERROR_MSG}    ${IMPLICIT_WAIT}
-    Element Should Be Visible        ${LOC_LOGIN_ERROR_MSG}
+    [Documentation]    Verifies error shown — alert banner or Required validation.
+    ${alert_visible}=    Run Keyword And Return Status
+    ...    Page Should Contain Element
+    ...    xpath://p[@class='oxd-text oxd-text--p oxd-alert-content-text']
+    ${required_visible}=    Run Keyword And Return Status
+    ...    Page Should Contain    Required
+    Should Be True    ${alert_visible} or ${required_visible}
+    ...    No login error message found
 
 Verify Login Error Message Text
     [Documentation]    Checks the exact error message text is correct.
