@@ -11,10 +11,9 @@ Resource         variables.resource
 # ══════════════════════════════════════════════════════════════════════════════
 
 Enter Username
-    [Documentation]    Types the username into the username field.
-    [Arguments]        ${username}
-    Wait Until Element Is Visible    ${LOC_USERNAME_INPUT}    ${IMPLICIT_WAIT}
-    Input Text                       ${LOC_USERNAME_INPUT}    ${username}
+    [Arguments]    ${username}
+    Wait Until Page Contains Element    ${LOC_USERNAME_INPUT}    ${IMPLICIT_WAIT}
+    Input Text    ${LOC_USERNAME_INPUT}    ${username}
 
 Enter Password
     [Documentation]    Types the password into the password field.
@@ -22,9 +21,8 @@ Enter Password
     Input Password    ${LOC_PASSWORD_INPUT}    ${password}
 
 Click Login Button
-    [Documentation]    Clicks the login submit button.
-    Wait Until Element Is Visible    ${LOC_LOGIN_BUTTON}    ${IMPLICIT_WAIT}
-    Click Button    ${LOC_LOGIN_BUTTON}
+    Wait Until Page Contains Element    ${LOC_LOGIN_BUTTON}    ${IMPLICIT_WAIT}
+    Click Element    ${LOC_LOGIN_BUTTON}
 
 Verify Login Error Is Displayed
     [Documentation]    Confirms the error message appears after a failed login.
