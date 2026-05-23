@@ -8,9 +8,11 @@ Library             SeleniumLibrary
 Resource            ../Resources/keywords.resource
 
 # Use the keywords from keywords.resource for Suite and Test Setup, Teardown session
-Suite Setup         Open Browser And Configure
-Suite Teardown      Close Browser Session
+Suite Teardown      Close All Browsers
+Test Setup          Open Browser And Configure
 Test Teardown       Capture Screenshot On Failure
+...                 Close Browser Session                
+ 
 
 # Use this specific sequence of steps for every test listed below
 Test Template       Login And Add Employee
