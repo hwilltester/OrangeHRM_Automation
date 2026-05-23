@@ -52,9 +52,11 @@ Verify Dashboard Is Displayed
 
 Navigate To Add Employee Page
     [Documentation]    Clicks PIM in the sidebar, then Add Employee.
-    Click Element                    ${LOC_PIM_MENU}
-    Wait Until Element Is Visible    ${LOC_ADD_EMPLOYEE_MENU}    ${IMPLICIT_WAIT}
-    Click Element                    ${LOC_ADD_EMPLOYEE_MENU}
+    Click Element          ${LOC_PIM_MENU}
+    Sleep                  2s
+    Wait Until Element Is Visible
+    ...    xpath=//a[normalize-space()='Add Employee']    ${IMPLICIT_WAIT}
+    Click Element          xpath=//a[normalize-space()='Add Employee']
 
 
 # ══════════════════════════════════════════════════════════════════════════════
