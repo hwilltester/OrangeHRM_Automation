@@ -14,7 +14,7 @@ Resource         variables.resource
 Open Browser And Configure
     Open Browser                    ${BASE_URL}/auth/login    ${BROWSER}
     Maximize Browser Window
-    Sleep                           3s
+    Wait Until Page Contains Element    ${LOC_USERNAME_INPUT}    ${IMPLICIT_WAIT}
     Set Selenium Implicit Wait      ${IMPLICIT_WAIT}
     Set Selenium Page Load Timeout  ${PAGE_LOAD_TIMEOUT}
 
@@ -52,7 +52,7 @@ Verify Dashboard Is Displayed
 
 Navigate To Add Employee Page
     Go To    ${BASE_URL}/pim/addEmployee
-    Wait Until Element Is Visible    ${LOC_FIRST_NAME_INPUT}    ${IMPLICIT_WAIT}
+    Wait Until Page Contains Element    ${LOC_FIRST_NAME_INPUT}    ${IMPLICIT_WAIT}
 
 
 # ══════════════════════════════════════════════════════════════════════════════
