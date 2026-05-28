@@ -233,7 +233,7 @@ Managing virtual environments and dependencies effectively.
 
 ## 🙋 Author
 
-**Htuu Will**
+**Htuu Will Oo**
 [GitHub](https://github.com/hwilltester) · [LinkedIn](https://linkedin.com/in/htuuwill)
 
 ---
