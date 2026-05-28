@@ -68,7 +68,11 @@ Fill In Employee Details
     Input Text                       ${LOC_LAST_NAME_INPUT}     ${last_name}
 
 Save Employee Record
-    [Documentation]    Clicks the Save button to submit the form.
+    # wait for closing spinner
+    Wait Until Element Is Not Visible    
+    ...    css:div.oxd-form-loader    
+    ...    ${IMPLICIT_WAIT}
+    Wait Until Element Is Visible    ${LOC_SAVE_BUTTON}    ${IMPLICIT_WAIT}
     Click Button    ${LOC_SAVE_BUTTON}
 
 Verify Employee Was Created
