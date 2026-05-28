@@ -5,6 +5,10 @@
 
 ---
 
+![Robot Framework Tests](https://github.com/hwilltester/OrangeHRM_Automation/actions/workflows/main.yml/badge.svg)
+
+---
+
 ## 📌 Why I Built This Project
 
 I built this project to demonstrate my skills in Web Automation and Quality Assurance. Using the OrangeHRM open-source application, I designed an automated testing suite that ensures the core business flows—like logging in, managing employees, and applying for leave work perfectly every single time.
